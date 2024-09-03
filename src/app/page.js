@@ -26,8 +26,8 @@ export default async function page() {
             <TodoCard
               key={todo._id}
               id={todo._id}
-              nama_balita={todo.nama_balita}
-              usia={todo.usia}
+              date={todo.date}
+              body-fat-percent={todo.body_fat_percent}
             />
           );
         })}
