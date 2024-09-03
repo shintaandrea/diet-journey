@@ -1,0 +1,31 @@
+import { Card } from "@/components/card";
+import { Button } from "@/components/button";
+import { DashboardTemplate } from "@/components/dashboard.template";
+
+export default function Home() {
+  const students = [
+    { name: "Reza", age: 44, gender: "male" },
+    { name: "Gani", age: 24, gender: "female" },
+    { name: "Andre", age: 14, gender: "male" },
+    { name: "Lani", age: 34, gender: "female" },
+  ];
+  return (
+    <div>
+      <DashboardTemplate>
+        <main className="grid grid-cols-3 gap-4">
+          {students.map((student) => {
+            return <Card key={student.name} {...student} />;
+          })}
+        </main>
+        <Button>
+          <div>+</div>
+          <div>Hello</div>
+        </Button>
+        <Button variant="secondary">
+          <div>+</div>
+          <div>Hello secondary</div>
+        </Button>
+      </DashboardTemplate>
+    </div>
+  );
+}
