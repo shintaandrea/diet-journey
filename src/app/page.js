@@ -3,7 +3,7 @@ import { TodoCreate } from "@/components/todos/todo.create";
 
 async function getTodos() {
   try {
-    const res = await fetch("https://v1.appbackend.io/v1/rows/c4U1qKdnREFr", {
+    const res = await fetch("https://v1.appbackend.io/v1/rows/Ed8KzKobj1ri", {
       cache: "no-store",
     });
     const data = await res.json();
