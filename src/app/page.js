@@ -27,7 +27,7 @@ export default async function page() {
               key={todo._id}
               id={todo._id}
               date={todo.date}
-              body-fat-percent={todo.body_fat_percent}
+              body_fat_percent={todo.body_fat_percent}
             />
           );
         })}

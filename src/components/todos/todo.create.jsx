@@ -22,7 +22,7 @@ export const TodoCreate = () => {
 
   return (
     <div>
-      <input onChange={(e) => setDate(e.target.value)} />
+      <input type="date" onChange={(e) => setDate(e.target.value)} />
       <input onChange={(e) => setBody_Fat_Percent(e.target.value)} />
       <button
         onClick={handleCreateTodo}
