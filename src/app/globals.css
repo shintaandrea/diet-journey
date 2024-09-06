@@ -24,3 +24,9 @@
     @apply bg-rose-600 text-rose-100;
   }
 }
+
+@media (max-width: 600px) {
+  .card {
+    background-color: blueviolet;
+  }
+}

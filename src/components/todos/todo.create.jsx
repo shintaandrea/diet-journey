@@ -21,15 +21,22 @@ export const TodoCreate = () => {
   }
 
   return (
-    <div>
-      <input type="date" onChange={(e) => setDate(e.target.value)} />
-      <input onChange={(e) => setBody_Fat_Percent(e.target.value)} />
-      <button
-        onClick={handleCreateTodo}
-        className="bg-slate-500 hover:bg-indigo-600 rounded-lg"
-      >
-        Create
-      </button>
+    <div className="flex flex-col items-center gap-2">
+      <p className="bg-slate-200 ">Body fat Journey</p>
+      <div className="grid grid-cols-3 p-2 gap-3 bg-slate-200 justify-evenly">
+        <input type="date" onChange={(e) => setDate(e.target.value)} />
+        <input onChange={(e) => setBody_Fat_Percent(e.target.value)} />
+        <h3>%</h3>
+      </div>
+
+      <div className="p-2 justify-center">
+        <button
+          onClick={handleCreateTodo}
+          className="bg-slate-500 hover:bg-indigo-600 rounded-lg"
+        >
+          Create
+        </button>
+      </div>
     </div>
   );
 };

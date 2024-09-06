@@ -18,12 +18,14 @@ export const TodoCard = ({ id, date, body_fat_percent }) => {
   }
 
   return (
-    <div className="w-fit border flex p-4 gap-5">
-      <h3>{date}</h3>
-      <h4>{body_fat_percent}</h4>
-      <button onClick={handleDeleteTodo} className=" hover:bg-indigo-500">
-        Delete
-      </button>
+    <div className="flex ">
+      <div className="bg-slate-200 border-yellow-200">
+        <h3>{date}</h3>
+        <h4>{body_fat_percent}%</h4>
+        <button onClick={handleDeleteTodo} className=" hover:bg-indigo-500">
+          Delete
+        </button>
+      </div>
     </div>
   );
 };

@@ -18,10 +18,20 @@ export default async function page() {
   const { data } = await getTodos();
 
   return (
-    <div>
+    <div
+      className="
+    "
+    >
+      <picture>
+        <img
+          src="https://blendofbites.com/wp-content/uploads/2021/12/yellow-pear-consept-of-pear-body-shape.webp"
+          alt="Diet Journey"
+        />
+      </picture>
+
       <TodoCreate />
-      <div className="space-y-4">
-        {data.map((todo) => {
+      <div>
+        {data?.map((todo) => {
           return (
             <TodoCard
               key={todo._id}
