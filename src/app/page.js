@@ -14,14 +14,11 @@ async function getTodos() {
   }
 }
 
-export default async function page() {
+export default async function Page() {
   const { data } = await getTodos();
 
   return (
-    <div
-      className="
-    "
-    >
+    <div>
       <picture>
         <img
           src="https://blendofbites.com/wp-content/uploads/2021/12/yellow-pear-consept-of-pear-body-shape.webp"
@@ -30,6 +27,7 @@ export default async function page() {
       </picture>
 
       <TodoCreate />
+
       <div>
         {data?.map((todo) => {
           return (
