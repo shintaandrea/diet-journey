@@ -18,7 +18,7 @@ export const TodoCard = ({ id, date, body_fat_percent }) => {
   }
 
   return (
-    <main className="w-full flex  items-center justify-center ">
+    <main className="w-full grid grid-cols-5items-center justify-center ">
       <div className="bg-slate-200 border-yellow-200">
         <h3>{date}</h3>
         <h4>{body_fat_percent}%</h4>
