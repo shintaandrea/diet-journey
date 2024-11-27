@@ -19,26 +19,28 @@ export default async function Page() {
 
   return (
     <div>
-      <picture>
+      {/* <picture>
         <img
           src="https://blendofbites.com/wp-content/uploads/2021/12/yellow-pear-consept-of-pear-body-shape.webp"
           alt="Diet Journey"
         />
-      </picture>
+      </picture> */}
 
       <TodoCreate />
 
       <div>
-        {data?.map((todo) => {
-          return (
-            <TodoCard
-              key={todo._id}
-              id={todo._id}
-              date={todo.date}
-              body_fat_percent={todo.body_fat_percent}
-            />
-          );
-        })}
+        <div className="grid grid-cols-4  gap-2 space-x-2 space-y-2 items-center p-14 border-spacing-6 ">
+          {data?.map((todo) => {
+            return (
+              <TodoCard
+                key={todo._id}
+                id={todo._id}
+                date={todo.date}
+                body_fat_percent={todo.body_fat_percent}
+              />
+            );
+          })}
+        </div>
       </div>
     </div>
   );

@@ -18,8 +18,8 @@ export const TodoCard = ({ id, date, body_fat_percent }) => {
   }
 
   return (
-    <main className="w-full grid grid-cols-5items-center justify-center ">
-      <div className="bg-slate-200 border-yellow-200">
+    <main className="w-full grid grid-cols-4 items-center justify-center ">
+      <div className="bg-indigo-600  border-yellow-700 ">
         <h3>{date}</h3>
         <h4>{body_fat_percent}%</h4>
         <button onClick={handleDeleteTodo} className=" hover:bg-indigo-500">
